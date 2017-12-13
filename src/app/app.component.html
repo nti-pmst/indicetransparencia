@@ -1,0 +1,18 @@
+<!-- <nav class="nav justify-content-center">
+  <img src="../assets/img/marca branca.png" class="pt-2 pb-2" width="200px" height="auto">
+</nav> -->
+
+<nav class="navbar navbar-light justify-content-center">
+  <a class="navbar-brand" href=""><img src="../assets/img/marca branca.png" class="pt-2 pb-2" width="200px" height="auto"></a>
+</nav>
+
+<div class="text-center align-items-center d-flex flex-column justify-content-center">
+  <div *ngFor="let video of videos" class="my-4">
+      <h5>{{video.titulo}}</h5>
+      <h5>{{video.subtitulo}}</h5>
+      <video width="720" height="480" controls>
+        <source src="{{video.url}}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  </div>
+</div>
